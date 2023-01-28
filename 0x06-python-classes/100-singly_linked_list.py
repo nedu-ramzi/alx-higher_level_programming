@@ -43,40 +43,40 @@ class Node:
         self.__next_node = value
 
 
-    class SinglyLinkedList:
-        """defines a singly linked list"""
+class SinglyLinkedList:
+    """defines a singly linked list"""
 
-        def __init__(self):
-            """Initializes the singly linked list"""
+    def __init__(self):
+        """Initializes the singly linked list"""
 
-            self.head = None
+        self.head = None
 
-        def __str__(self):
-            """make list printable"""
+    def __str__(self):
+        """make list printable"""
 
-            printsll = ""
-            location = self.head
-            while location:
-                printsll += str(location.data) + "\n"
-                location = location.next_node
-            return printsll[:-1]
+        printsll = ""
+        location = self.head
+        while location:
+            printsll += str(location.data) + "\n"
+            location = location.next_node
+        return printsll[:-1]
 
-        def sorted_insert(self, value):
-            """insert in a sorted fashion
-            Args:
-                value: what the value will be on the node
-            """
-            new = Node(value)
-            if not self.head:
-                self.head = new
-                return
-            if value < self.head.data:
-                new.next_node = self.head
-                self.head = new
-                return
-            location = self.head
-            while location.next_node and location.next_node.data < value:
-                location = location.next_node
-            if location.next_node:
-                new.next_node = location.next_node
-            location.next_node = new
+    def sorted_insert(self, value):
+        """insert in a sorted fashion
+        Args:
+            value: what the value will be on the node
+        """
+        new = Node(value)
+        if not self.head:
+            self.head = new
+            return
+        if value < self.head.data:
+            new.next_node = self.head
+            self.head = new
+            return
+        location = self.head
+        while location.next_node and location.next_node.data < value:
+            location = location.next_node
+        if location.next_node:
+            new.next_node = location.next_node
+        location.next_node = new
