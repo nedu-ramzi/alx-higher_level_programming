@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """ Unittest module for rectangle module """
 import unittest
 from models.rectangle import Rectangle
