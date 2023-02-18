@@ -22,7 +22,8 @@ class Base:
             list_dictionaries is a list of dictionaries
             If list_dictionaries is None or empty, return the string: "[]"
 
-            Otherwise, return the JSON string representation of list_dictionaries
+            Otherwise, return the JSON string 
+            representation of list_dictionaries
             """
             if not list_dictionaries or list_dictionaries is None:
                 return "[]"
