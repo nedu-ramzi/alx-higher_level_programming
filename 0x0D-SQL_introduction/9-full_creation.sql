@@ -2,9 +2,7 @@
 
 CREATE TABLE IF NOT EXISTS second_table
 (id INT, name VARCHAR(256), score INT)
-	VALUES(
-	       (1, name = “John”, score = 10),
-	       (2, name = "Alex", score = 3),
-	       (3, name = "Bob", score = 14),
-	       (4, name = "George", score = 8)
-	      );
+VALUES(1, name = "John", score = 10),
+(2, name = "Alex", score = 3),
+(3, name = "Bob", score = 14),
+(4, name = "George", score = 8);
