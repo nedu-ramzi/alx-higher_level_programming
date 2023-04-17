@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Lists all the states from the database hbrn_0e_0_usa"""
+""Lists all the states from the database hbrn_0e_0_usa"""
+
 import MySQLdb
 from sys import argv
 
